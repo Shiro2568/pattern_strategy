@@ -29,18 +29,3 @@ module Strategy
 end
 
 
-
-class Strategy1
-    def hello
-        print("hello world")
-    end
-end
-class Strategy2 
-end
-cont = Strategy::Context.new
-
-cont.set_strategy(Strategy1.new)
-cont.hello
-
-cont.set_strategy(Strategy2.new)
-cont.hello
